@@ -33,10 +33,6 @@ To install this project, follow these steps:
 
 <contributing>
 
-## Tests
-
-<tests>
-
 ## Questions
 
 If you have any questions, feel free to reach out:

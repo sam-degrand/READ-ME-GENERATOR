@@ -57,11 +57,6 @@ inquirer
     },
     {
       type: 'input',
-      name: 'tests',
-      message: 'Enter test instructions:',
-    },
-    {
-      type: 'input',
       name: 'githubUsername',
       message: "Enter your GitHub username:",
     },
