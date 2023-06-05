@@ -71,3 +71,38 @@ inquirer
       message: "Enter your email address:",
     },
   ])
+  .then((answers) => {
+    // Retrieve the license badge URL based on the selected license
+    let licenseBadge;
+    let licenseNotice;
+
+    switch (answers.license) {
+      case 'MIT':
+        licenseBadge = '[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)';
+        licenseNotice = 'This application is covered under the [MIT License](https://opensource.org/licenses/MIT).';
+        break;
+      case 'Apache-2.0':
+        licenseBadge = '[![License: Apache 2.0](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)';
+        licenseNotice = 'This application is covered under the [Apache License 2.0](https://opensource.org/licenses/Apache-2.0).';
+        break;
+      case 'GPL-3.0':
+        licenseBadge = '[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)';
+        licenseNotice = 'This application is covered under the [GPLv3 License](https://www.gnu.org/licenses/gpl-3.0).';
+        break;
+      default:
+        licenseBadge = '';
+        licenseNotice = '';
+    }
+
+    // Generate the README content
+    const readmeContent = generateREADME(answers, licenseBadge, licenseNotice);
+
+    // Write the generated README content to a file
+    fs.writeFile('README.md', readmeContent, (err) => {
+      if (err) {
+        console.error(err);
+      } else {
+        console.log('README.md successfully generated!');
+      }
+    });
+  })
