@@ -28,7 +28,7 @@ https://drive.google.com/file/d/1Se9oIo5nnHNZPiKc-dBbaSsUsgGLyC3G/view
 
 ## License
 
-This application is covered under the [MIT License](https://opensource.org/licenses/MIT). For more details, refer to the [LICENSE](LICENSE) file.
+This application is covered under the [MIT License](https://opensource.org/licenses/MIT).
 
 ## Contributing
 
