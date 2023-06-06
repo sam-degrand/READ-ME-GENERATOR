@@ -45,4 +45,4 @@ Contributions are welcome! If you want to contribute to the README Generator, pl
 If you have any questions or need further assistance, feel free to reach out:
 
 - GitHub: [Sam-Degrand](https://github.com/sam-degrand)
-- Email: your-degrandchamps@gmail.com
+- Email: degrandchamps@gmail.com
